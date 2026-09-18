@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#F0FDF4]">
+<body class="bg-[#F0FDF4] inter-font">
     <!-- header section -->
     <header class="">
         <div class="navbar bg-base-100 shadow-sm bg-green-700 px-5 py-4">
@@ -73,6 +73,7 @@
         <h3 class="font-semibold text-black  text-2xl mb-3">Categories</h3>
         <div id="category-list" class="flex flex-col gap-1 text-xl">
           <!-- categories injected by JS -->
+           
         </div>
       </aside>
  
@@ -87,12 +88,12 @@
       </div>
  
       <!-- Cart -->
-      <aside class="bg-green-50 rounded-xl p-4 h-fit lg:sticky lg:top-24">
+      <aside class="bg-white rounded-xl p-4 h-fit lg:sticky lg:top-24">
         <h3 class="font-semibold text-black mb-3 text-2xl">Your Cart</h3>
         <ul id="cart-list" class="flex flex-col gap-2 text-sm mb-4 max-h-72 overflow-y-auto">
           <!-- cart items injected by JS -->
         </ul>
-        <div class="border-t border-green-200 pt-3 flex justify-between font-semibold text-green-900">
+        <div class="border-t border-gray-200 pt-3 flex justify-between font-semibold text-green-900">
           <span>Total</span>
           <span>$<span id="cart-total">0</span></span>
         </div>
@@ -175,5 +176,17 @@
   <footer class="bg-[#14532D]">
      <p class="text-center text-white text-xs p-4">&copy; 2026 Green Earth. All Rights Reserved.</p>
   </footer>
+
+
+  <!-- modal -->
+   <div id="tree-modal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center px-4">
+    <div class="bg-white rounded-xl max-w-md w-full p-6 relative">
+      <button id="modal-close" class="absolute top-3 right-3 text-gray-400 hover:text-gray-700 text-xl">&times;</button>
+      <div id="modal-body" class="flex flex-col gap-3">
+        <!-- modal content injected by JS -->
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
 </body>
 </html>
