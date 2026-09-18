@@ -15,3 +15,9 @@
     .tree-name-btn:hover { text-decoration: underline; }
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-thumb { background: #86efac; border-radius: 3px; }
+
+
+    .active-category{
+      background-color: #15803d;
+      color: white;
+    }

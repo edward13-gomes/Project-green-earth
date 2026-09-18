@@ -204,11 +204,11 @@ document.getElementById("modal-close").addEventListener("click", () => {
   document.getElementById("tree-modal").classList.add("hidden");
 });
 
-document.getElementById("tree-modal").addEventListener("click", (e) => {
-  if (e.target.id === "tree-modal") {
-    document.getElementById("tree-modal").classList.add("hidden");
-  }
-});
+// document.getElementById("tree-modal").addEventListener("click", (e) => {
+//   if (e.target.id === "tree-modal") {
+//     document.getElementById("tree-modal").classList.add("hidden");
+//   }
+// });
 
 // ---------- Cart ----------
 const addToCart = (id, name, price) => {
