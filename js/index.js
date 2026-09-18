@@ -166,7 +166,7 @@ const loadWordDetail = async (id) => {
   const res = await fetch(`${API_BASE}/plant/${id}`);
   const json = await res.json();
 
-  displayTreeDetails(json.plants[0]);
+  displayTreeDetails(json.plants);
 };
 
 const displayTreeDetails = (tree) => {
